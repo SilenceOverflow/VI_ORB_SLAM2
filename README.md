@@ -6,8 +6,8 @@ I have fix some bugs to make it more stable to pass through more datasets and mo
 
 
 ## TO DO List
-- [] Real-time 
-- [] Support the Localization mode for stereo VI ORB-SLAM
+- [ ] Real-time 
+- [ ] Support the Localization mode for stereo VI ORB-SLAM
 
 
 ## Building VI-ORB-SLAM2 library and examples
@@ -72,7 +72,9 @@ Here we use the translation RMSE (m)  of the keyframe trajectory as the metric. 
 | V2_03_difficult  |        X        |        0.045       |          X         |     0.468666    |
 
 > * 'X' indicates the failure in this sequence.
+>
 > ** The left two columns are referring to [Visual-Inertial Monocular SLAM with Map Reuse](https://arxiv.org/abs/1610.05949).
+>
 > *** The right two columns are results of this repository obtained on laptop.
 
 
