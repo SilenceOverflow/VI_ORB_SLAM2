@@ -2,8 +2,11 @@
 
 The repository includes the **Monocular** version and the **Stereo** version of **Visual-Inertial ORB-SLAM**. These two are the no ros version of  [jingpang](https://github.com/jingpang)'s **LearnVIORB (https://github.com/jingpang/LearnVIORB) and [ZuoJiaxing](https://github.com/ZuoJiaxing)'s **[**LearnVIORBnorosgai2**](https://github.com/ZuoJiaxing/LearnVIORBnorosgai2)**. For details, you may refer to  `Examples/Monocular/mono_euroc_VI.cc` and `Examples/Stereo/stereo_euroc_VI.cc`. 
 
-I have fix some bugs to make it more stable to pass through more datasets and modify the code to make it compatible with [ORB-SLAM2](https://github.com/raulmur/ORB_SLAM2). Not bug-free. Not real-time. For Stereo version, it does not support the Localization mode yet.
+I have fix some bugs to make it more stable to pass through more datasets and modify the code to make it compatible with [ORB-SLAM2](https://github.com/raulmur/ORB_SLAM2). 
 
+Not bug-free. Not real-time.
+
+If you think this repo is useful, please ***watch***, ***star*** or ***fork*** it!
 
 ## TO DO List
 - [ ] Real-time 
@@ -50,10 +53,6 @@ MH_01_easy
 
 The temp results are stored at *tmp_result/mono_VI/* and *tmp_result/stereo_VI/* for Monocular and Stereo VI ORB-SLAM respectively. In each folder, files about camera poses, IMU biases, scale are saved.
 
-### Visualization
-The example visualizations on the dataset **MH_04_difficult** are at *visualizations* folder.
-
-
 ### Quantitative Evaluation
 Here we use the translation RMSE (m)  of the keyframe trajectory as the metric. The results are shown below.
 
@@ -77,6 +76,14 @@ Here we use the translation RMSE (m)  of the keyframe trajectory as the metric. 
 >
 > *** The right two columns are results of this repository obtained on laptop.
 
+### Visualization
+The example visualizations on the dataset **MH_04_difficult** are at *visualizations* folder.
+
+![Trajectories in MH_04_difficult](visualizations/MH_04_difficult.png)
+
+![Error projected on trajectory in MH_04_difficult](visualizations/MH_04_difficult_error.png)
+
+![Accelerator biases](visualizations/ba.png)
 
 -----
 
